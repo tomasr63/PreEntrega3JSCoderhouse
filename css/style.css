@@ -1,0 +1,109 @@
+/* BS ICONS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.navbar-toggler:focus, .btn:focus {
+    box-shadow: none;
+}
+
+.bi-list {
+    transition: all .2s;
+}
+
+.navbar-toggler:active .bi-list {
+    color: rgb(252, 227, 3) !important;
+}
+
+.menu-list {
+    list-style: none;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-btns {
+    color: greenyellow;
+    border-color: greenyellow;
+}
+
+.main-btns:hover {
+    color: rgb(0, 0, 0);
+    border-color: greenyellow;
+    background-color: greenyellow;
+}
+
+.btn-search-cancel {
+    color: red;
+    border-color: red;
+}
+
+.btn-search-cancel:hover {
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    background-color: red;
+}
+
+/* FORM */
+.container-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* CARRITO */
+.card-img-carrito {
+    border-radius: 50%;
+}
+
+/* TITULO CARRITO*/
+.titulo-header-carrito {
+    color: yellowgreen;
+}
+
+/* VOLVER */
+.text-volver {
+    color: red;
+}
+
+/* CARDS */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1000px;
+}
+
+/* MEDIAS QUERIES */
+@media (max-width: 1000px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: .3rem;
+    }
+}
+
+@media (max-width: 611px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
